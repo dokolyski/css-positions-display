@@ -1,0 +1,67 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #c48ee7;
+}
+
+.products-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-card {
+  background-color: #bff0ff;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 24px 0 #42445a;
+  box-shadow: 0 0 24px 0 #42445a;
+  overflow: hidden;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  text-align: center;
+}
+
+.product-card > .image-background::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card > .image-background {
+  width: 100%;
+  height: 22rem;
+  background-color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  -webkit-box-shadow: 0 0 1rem 0 #42445a;
+          box-shadow: 0 0 1rem 0 #42445a;
+  border-radius: 8px;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.product-card > .image-background img {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
